@@ -8,6 +8,11 @@ return {
     signcolumn = "auto",
     wrap = false,
     colorcolumn = { 80 },
+    -- disable fold arrows UI
+    foldcolumn = "0",
+    shiftwidth = 4,
+    tabstop = 4,
+    softtabstop = 4,
   },
   g = {
     mapleader = " ",
@@ -26,9 +31,6 @@ return {
     -- in AstroNvim v4)
     resession_enabled = false,
   },
-  wo = {
-    foldcolumn = "0"
-  }
 }
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
