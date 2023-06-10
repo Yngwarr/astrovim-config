@@ -26,6 +26,9 @@ return {
     -- in AstroNvim v4)
     resession_enabled = false,
   },
+  wo = {
+    foldcolumn = "0"
+  }
 }
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)

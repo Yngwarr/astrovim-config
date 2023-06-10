@@ -31,6 +31,7 @@ return {
     end,
   },
   -- You can disable default plugins as follows:
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   -- { "kevinhwang91/nvim-ufo", enabled = false },
   --
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
