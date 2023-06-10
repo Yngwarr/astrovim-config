@@ -13,6 +13,8 @@ return {
     shiftwidth = 4,
     tabstop = 4,
     softtabstop = 4,
+    -- bring back the default zt and zb behavior
+    scrolloff = 0
   },
   g = {
     mapleader = " ",
