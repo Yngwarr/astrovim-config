@@ -18,6 +18,17 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+
+    -- Conjure descriptions
+    ["<localleader>e"] = { desc = "Evaluate" },
+    ["<localleader>ec"] = { desc = "Evaluate and comment" },
+    ["<localleader>c"] = { desc = "Connect" },
+    ["<localleader>g"] = { desc = "Goto" },
+    ["<localleader>l"] = { desc = "Logs" },
+    ["<localleader>r"] = { desc = "Refresh" },
+    ["<localleader>s"] = { desc = "Session" },
+    ["<localleader>t"] = { desc = "Test" },
+    ["<localleader>v"] = { desc = "View" },
   },
   t = {
     -- setting a mapping to false will disable it
