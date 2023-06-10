@@ -43,6 +43,18 @@ return {
     servers = {
       -- "pyright"
     },
+    on_attach = function(client, buf)
+      if client.name == "null-ls" then
+        if not require("null-ls.generators").can_run(vim.bo[buf].filetype,
+          require("null-ls.methods").lsp.FORMATTING)
+        then
+          vim.bo[buf].formatexpr = nil
+        end
+      end
+      if client.name == "lua_ls" then
+        vim.bo[buf].formatexpr = nil
+      end
+    end
   },
 
   -- Configure require("lazy").setup() options
