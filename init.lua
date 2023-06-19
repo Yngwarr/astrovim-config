@@ -41,8 +41,14 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "gdscript"
     },
+    -- config = {
+    --   godot = function()
+    --     return {
+    --     }
+    --   end
+    -- },
     on_attach = function(client, buf)
       if client.name == "null-ls" then
         if not require("null-ls.generators").can_run(vim.bo[buf].filetype,
