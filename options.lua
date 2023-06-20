@@ -32,6 +32,8 @@ return {
     -- enable experimental resession.nvim session management (will be default
     -- in AstroNvim v4)
     resession_enabled = false,
+
+    sexp_enable_insert_mode_mappings = 0,
   },
 }
 -- If you need more control, you can use the function()...end notation

@@ -9,7 +9,7 @@ return {
 
   { import = "astrocommunity.motion.nvim-surround" },
 
-  { import = "astrocommunity.pack.clojure" },
+  -- { import = "astrocommunity.pack.clojure" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },

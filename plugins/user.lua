@@ -1,6 +1,11 @@
 return {
   {
-    "guns/vim-sexp"
+    "guns/vim-sexp",
+    lazy = false
+  },
+  {
+    "sheerun/vim-polyglot",
+    lazy = false
   }
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
