@@ -19,6 +19,13 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
 
+    ["<leader>gT"] = {
+      function()
+        require("agitator").git_time_machine({ use_current_win = true })
+      end,
+      desc = "Time machine"
+    },
+
     -- Conjure descriptions
     ["<localleader>e"] = { desc = "Evaluate" },
     ["<localleader>ec"] = { desc = "Evaluate and comment" },

@@ -20,6 +20,10 @@ return {
   {
     "chrisbra/NrrwRgn",
     lazy = false
+  },
+  {
+    "emmanueltouzery/agitator.nvim",
+    lazy = false,
   }
   -- {
   --   "catppuccin/nvim",

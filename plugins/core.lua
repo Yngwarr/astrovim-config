@@ -39,12 +39,11 @@ return {
   -- clojure development
 
   -- Clojure Language Server
-  -- had to turn it off because of ram consumption
-  -- {
-  --   "williamboman/mason-lspconfig.nvim",
-  --   opts = function(_, opts) opts.ensure_installed =
-  --     utils.list_insert_unique(opts.ensure_installed, "clojure_lsp") end,
-  -- },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = function(_, opts) opts.ensure_installed =
+      utils.list_insert_unique(opts.ensure_installed, "clojure_lsp") end,
+  },
   -- Clojure parser
   {
     "nvim-treesitter/nvim-treesitter",
