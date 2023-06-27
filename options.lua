@@ -33,6 +33,7 @@ return {
     -- in AstroNvim v4)
     resession_enabled = false,
 
+    polyglot_disabled = { "gdscript" },
     sexp_enable_insert_mode_mappings = 0,
   },
 }
