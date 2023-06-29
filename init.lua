@@ -58,7 +58,8 @@ return {
           vim.bo[buf].formatexpr = nil
         end
       end
-      if client.name == "lua_ls" then
+      -- turn off the formatter so gq motion works
+      if client.name == "lua_ls" or client.name == "clojure_lsp" then
         vim.bo[buf].formatexpr = nil
       end
     end

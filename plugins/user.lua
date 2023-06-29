@@ -24,6 +24,21 @@ return {
   {
     "emmanueltouzery/agitator.nvim",
     lazy = false,
+  },
+  {
+    "petertriho/cmp-git",
+    lazy = false,
+    config = function()
+      require("cmp").setup.filetype({ "gitcommit" }, { sources = { { name = "git" } }})
+      require("cmp_git").setup()
+    end,
+  },
+  {
+    "cwebster2/github-coauthors.nvim",
+    lazy = false,
+    config = function()
+      require('telescope').load_extension('githubcoauthors')
+    end
   }
   -- {
   --   "catppuccin/nvim",

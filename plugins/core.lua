@@ -28,7 +28,8 @@ return {
     "goolord/alpha-nvim",
     opts = function(_, opts)
       -- customize the dashboard header
-      opts.section.header.val = logo[math.random(#logo)]
+      -- opts.section.header.val = logo[math.random(#logo)]
+      opts.section.header.val = logo[2]
       return opts
     end,
   },
@@ -42,7 +43,8 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     opts = function(_, opts) opts.ensure_installed =
-      utils.list_insert_unique(opts.ensure_installed, "clojure_lsp") end,
+      utils.list_insert_unique(opts.ensure_installed, "clojure_lsp")
+    end,
   },
   -- Clojure parser
   {

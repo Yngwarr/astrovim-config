@@ -38,19 +38,6 @@ return {
     ["<localleader>v"] = { desc = "View" },
 
     -- vim-sexp
-    ["<localleader>?"] = false,
-    ["<localleader>@"] = false,
-    ["<localleader>["] = false,
-    ["<localleader>]"] = false,
-    ["<localleader>{"] = false,
-    ["<localleader>}"] = false,
-    ["<localleader>h"] = false,
-    ["<localleader>I"] = false,
-    ["<localleader>i"] = false,
-    ["<localleader>o"] = false,
-    ["<localleader>O"] = false,
-    ["<localleader>W"] = false,
-    ["<localleader>w"] = false,
     ["<localleader>k"] = { name = "Paredit" },
     ["<localleader>kr"] = { "<Plug>(sexp_raise_list)", desc = "Raise list" },
     ["<localleader>kR"] = { "<Plug>(sexp_raise_element)", desc = "Raise element" },
@@ -60,6 +47,14 @@ return {
     ["<localleader>kk"] = { "<Plug>(sexp_capture_next_element)", desc = "Slurp front" },
     ["<localleader>kJ"] = { "<Plug>(sexp_emit_head_element)", desc = "Barf back" },
     ["<localleader>kK"] = { "<Plug>(sexp_emit_tail_element)", desc = "Barf front" },
+
+    -- git co-authors
+    ["<leader>fg"] = {
+      function()
+        require('telescope').extensions.githubcoauthors.coauthors()
+      end,
+      desc = "Find Co-Authors"
+    }
   },
   t = {
     -- setting a mapping to false will disable it
