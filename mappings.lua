@@ -26,6 +26,13 @@ return {
       desc = "Time machine"
     },
 
+    ["<leader>gB"] = {
+      function()
+        require("agitator").git_blame()
+      end,
+      desc = "Agitator Blame"
+    },
+
     -- Conjure descriptions
     ["<localleader>e"] = { desc = "Evaluate" },
     ["<localleader>ec"] = { desc = "Evaluate and comment" },
