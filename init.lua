@@ -18,8 +18,11 @@ return {
   },
 
   -- Set colorscheme to use
+  colorscheme = "jellybeans-nvim",
+  -- colorscheme = "minimal",
+  -- colorscheme = "tokyonight-night",
   -- colorscheme = "astrodark",
-  colorscheme = "tokyonight-night",
+  -- colorscheme = "onedark",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {

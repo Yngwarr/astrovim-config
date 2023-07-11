@@ -18,6 +18,21 @@ return {
     opts = {},
   },
   {
+    "yazeed1s/minimal.nvim",
+    lazy = false,
+    priority = 1000
+  },
+  {
+    "rktjmp/lush.nvim",
+    lazy = false,
+    priority = 1000
+  },
+  {
+    "metalelf0/jellybeans-nvim",
+    lazy = false,
+    priority = 1000
+  },
+  {
     "chrisbra/NrrwRgn",
     lazy = false
   },
@@ -40,6 +55,12 @@ return {
       require('telescope').load_extension('githubcoauthors')
     end
   }
+  -- -------- COLORSCHEME GRAVEYARD --------
+  -- {
+  --   "olimorris/onedarkpro.nvim",
+  --   lazy = false,
+  --   priority = 1000
+  -- },
   -- {
   --   "catppuccin/nvim",
   --   name = "catppuccin",
