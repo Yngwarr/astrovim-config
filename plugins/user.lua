@@ -12,17 +12,6 @@ return {
     lazy = false
   },
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  {
-    "yazeed1s/minimal.nvim",
-    lazy = false,
-    priority = 1000
-  },
-  {
     "rktjmp/lush.nvim",
     lazy = false,
     priority = 1000
@@ -31,6 +20,10 @@ return {
     "metalelf0/jellybeans-nvim",
     lazy = false,
     priority = 1000
+  },
+  {
+    "carakan/new-railscasts-theme",
+    lazy = false,
   },
   {
     "chrisbra/NrrwRgn",
@@ -54,8 +47,26 @@ return {
     config = function()
       require('telescope').load_extension('githubcoauthors')
     end
+  },
+  {
+    "cappyzawa/trim.nvim",
+    lazy = false,
+    opts = {
+      trim_last_line = false,
+      trim_first_line = false
+    }
+  },
+  {
+    "https://gitlab.com/invertisment/conjure-clj-additions-cider-nrepl-mw",
+    ft = { "clojure" },
   }
   -- -------- COLORSCHEME GRAVEYARD --------
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
   -- {
   --   "olimorris/onedarkpro.nvim",
   --   lazy = false,
@@ -74,6 +85,11 @@ return {
   -- {
   --   "mcchrish/zenbones.nvim",
   --   lazy = false
+  -- },
+  -- {
+  --   "yazeed1s/minimal.nvim",
+  --   lazy = false,
+  --   priority = 1000
   -- },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax

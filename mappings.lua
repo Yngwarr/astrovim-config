@@ -55,6 +55,14 @@ return {
     ["<localleader>kJ"] = { "<Plug>(sexp_emit_head_element)", desc = "Barf back" },
     ["<localleader>kK"] = { "<Plug>(sexp_emit_tail_element)", desc = "Barf front" },
 
+    -- clojure tests
+    ["<localleader>tt"] = { ":CcaNsJumpToAlternate<cr>", desc = "Jump to alternate" },
+    ["<localleader>tf"] = { ":CcaNreplJumpToFailingCljTest<cr>", desc = "Jump to failed" },
+
+    -- custom shortcuts
+    ["<localleader>S"] = { name = "Custom shortcuts" },
+    ["<localleader>Ss"] = { "va[:!ik-intsql<cr><cr>gqq", desc = "Interpolate SQL" },
+
     -- git co-authors
     ["<leader>fg"] = {
       function()
