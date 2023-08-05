@@ -4,6 +4,10 @@ return {
     lazy = false
   },
   {
+    "tpope/vim-dadbod",
+    lazy = false
+  },
+  {
     "yngwarr/vim-sexp",
     lazy = false
   },

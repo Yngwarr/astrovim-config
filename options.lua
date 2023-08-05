@@ -35,6 +35,8 @@ return {
 
     polyglot_disabled = { "gdscript" },
     sexp_enable_insert_mode_mappings = 0,
+
+    db = 'postgres://postgres:postgres@172.19.0.3/db_0'
   },
 }
 -- If you need more control, you can use the function()...end notation
