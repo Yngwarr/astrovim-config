@@ -92,6 +92,15 @@ return {
   polish = function()
     vim.api.nvim_create_user_command('SQLformat', "'<,'>!sqlformat -r /dev/stdin", {})
 
+    local notify = vim.notify
+    vim.notify = function(msg, ...)
+      if msg:match("warning: multiple different client offset_encodings") then
+        return
+      end
+
+      notify(msg, ...)
+    end
+
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

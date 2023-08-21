@@ -33,6 +33,15 @@ return {
       desc = "Agitator Blame"
     },
 
+    -- TODO add a mapping that finds the '-- db:' comment and uses it as a
+    --      postgres url for :DB
+    -- ["<leader>es"] = {
+    --   function()
+    --     local connUrl = "";
+    --   end,
+    --   desc = "Run SQL"
+    -- },
+
     -- Conjure descriptions
     ["<localleader>e"] = { desc = "Evaluate" },
     ["<localleader>ec"] = { desc = "Evaluate and comment" },
@@ -67,6 +76,13 @@ return {
     ["<leader>fg"] = {
       function()
         require('telescope').extensions.githubcoauthors.coauthors()
+      end,
+      desc = "Find Co-Authors"
+    },
+
+    ["<leader>fw"] = {
+      function()
+        require('telescope').extensions.live_grep_args.live_grep_args()
       end,
       desc = "Find Co-Authors"
     }
