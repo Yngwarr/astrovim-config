@@ -40,6 +40,8 @@ return {
     -- db = 'postgres://postgres:postgres@172.19.0.5/db_0',
     -- sandbox db
     -- db = 'postgres://postgres:postgres@172.21.0.2/postgres',
+    -- local_aidbox
+    db = 'postgres://postgres:postgres@localhost:5436/protodev'
   },
 }
 -- If you need more control, you can use the function()...end notation

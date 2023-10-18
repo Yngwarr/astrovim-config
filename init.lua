@@ -76,9 +76,9 @@ return {
         -- customize default disabled vim plugins
         disabled_plugins = {
           "tohtml",
-          "gzip",
+          -- "gzip",
           "matchit",
-          "zipPlugin",
+          -- "zipPlugin",
           "netrwPlugin",
           "tarPlugin"
         },
