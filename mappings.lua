@@ -26,12 +26,7 @@ return {
       desc = "Time machine"
     },
 
-    ["<leader>gB"] = {
-      function()
-        require("agitator").git_blame()
-      end,
-      desc = "Agitator Blame"
-    },
+    ["<leader>gB"] = { ":ToggleBlame<cr>", desc = "Full-file blame" },
 
     -- TODO add a mapping that finds the '-- db:' comment and uses it as a
     --      postgres url for :DB

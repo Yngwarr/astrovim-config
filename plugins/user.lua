@@ -38,6 +38,10 @@ return {
     lazy = false,
   },
   {
+    "FabijanZulj/blame.nvim",
+    lazy = false
+  },
+  {
     "petertriho/cmp-git",
     lazy = false,
     config = function()
